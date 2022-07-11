@@ -1,6 +1,5 @@
 package TestCases;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -16,10 +15,9 @@ import Pages.ProductDetailsPage;
 import Pages.ProductsPage;
 import Pages.loginPage;
 
-public class TC1 {
-	
+public class ValidateThankYouTC {
+
 	public WebDriver driver;
-	
 	
 	@BeforeMethod
 	public void openBrowser()
@@ -43,7 +41,6 @@ public class TC1 {
 		
 	}
 	
-
 	@Test(enabled = true)
 	public void validCredentials() {
 		loginPage newObj = new loginPage(driver);
@@ -53,35 +50,10 @@ public class TC1 {
 		new loginPage(driver).clickLogin();
 		
 	}
-	
-	@Test(dependsOnMethods = {"validCredentials"} , priority = 1 , enabled = true)
-	public void chooseBackPack() {
-		
-		validCredentials();
-		new ProductsPage(driver).selectBackPack();
-		new ProductsPage(driver).clickShoppingCart();
-		new CartPage(driver).clickCheckout();
-		new AddressPage(driver).enterAddressDetails("Anu", "Jain", "T6r 0m3");
-		new CheckOutPage(driver).clickFinish();
-		
-	}
 
 	@Test
-	public void chooseaProduct() {
-		
-		validCredentials();
-		new ProductsPage(driver).selectBackPack();
-		new ProductDetailsPage(driver).clickAddToCart();
-		new ProductsPage(driver).clickShoppingCart();
-		new CartPage(driver).clickCheckout();
-		new AddressPage(driver).enterAddressDetails("Anu", "Jain", "T6r 0m3");
-		new CheckOutPage(driver).clickFinish();
-		
-	}
-	
-	@Test
 	public void validateThankYouMsg() {
-	chooseaProduct();
+	new SelectBackPackTC().chooseaProduct();
 	String actualMsg = new CompletePage(driver).ValidateThankyouMsg();
 	Assert.assertEquals(actualMsg, "THANK YOU FOR YOUR ORDER");
 	}
@@ -94,5 +66,6 @@ public class TC1 {
 				
 	}
 	
-   
+
+
 }

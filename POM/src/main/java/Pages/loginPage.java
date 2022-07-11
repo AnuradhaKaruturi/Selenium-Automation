@@ -61,7 +61,7 @@ public class loginPage extends BasePage {
 	
 	public void uploadFile() {
 		enterText(upload,"C:\\Users\\anura\\Downloads"); //passed
-		//enterText(upload,"\"C:\\Users\\anura\\Downloads\\most-complete-webdriver-java-cheat sheet.pdf\""); //failed
+		//enterText(upload,"\"C:\\Users\\anura\\Downloads\\most-complete-webdriver-java-cheatsheet.pdf\""); //failed
 		
 	}
 	

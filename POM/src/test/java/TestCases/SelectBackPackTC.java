@@ -1,6 +1,5 @@
 package TestCases;
 
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -16,10 +15,9 @@ import Pages.ProductDetailsPage;
 import Pages.ProductsPage;
 import Pages.loginPage;
 
-public class TC2 {
+public class SelectBackPackTC {
 	
 	public WebDriver driver;
-	
 	
 	@BeforeMethod
 	public void openBrowser()
@@ -43,16 +41,17 @@ public class TC2 {
 		
 	}
 	
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void validCredentials() {
+		loginPage newObj = new loginPage(driver);
 		
-		new loginPage(driver).setUserName("standard_user");
+		newObj.setUserName("standard_user");
 		new loginPage(driver).setPassword("secret_sauce");
 		new loginPage(driver).clickLogin();
 		
 	}
 	
-	@Test
+	@Test(dependsOnMethods = {"validCredentials"} , priority = 1 , enabled = true)
 	public void chooseBackPack() {
 		
 		validCredentials();
@@ -63,8 +62,8 @@ public class TC2 {
 		new CheckOutPage(driver).clickFinish();
 		
 	}
-
-	@Test(enabled = false)
+	
+	@Test
 	public void chooseaProduct() {
 		
 		validCredentials();
@@ -77,12 +76,13 @@ public class TC2 {
 		
 	}
 	
-	@Test(enabled = false)
+	@Test
 	public void validateThankYouMsg() {
 	chooseaProduct();
 	String actualMsg = new CompletePage(driver).ValidateThankyouMsg();
 	Assert.assertEquals(actualMsg, "THANK YOU FOR YOUR ORDER");
 	}
+	
 	@AfterMethod
 	public void closeBrowser()
 	{
@@ -91,5 +91,5 @@ public class TC2 {
 				
 	}
 	
-   
+
 }
