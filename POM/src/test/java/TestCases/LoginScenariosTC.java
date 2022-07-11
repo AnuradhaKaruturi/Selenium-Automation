@@ -1,20 +1,57 @@
 package TestCases;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Pages.loginPage;
+import Utilities.DataLoader;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LoginScenariosTC {
 	
 
 	public WebDriver driver;
 	
+	//@Parameters({"browserName"})
+	@BeforeMethod
+	public void OpenBrowser() {
+		String browserName = new DataLoader().getBrowserName();
+		switch(browserName){
+		case "chrome":
+			WebDriverManager.chromedriver().cachePath("src/test/resources/drivers").setup(); 
+			driver = new ChromeDriver();
+			break;
+		case "edge":
+			WebDriverManager.edgedriver().cachePath("src/test/resources/drivers").setup();
+			driver = new EdgeDriver();
+			break;
+		case "forefox":
+			WebDriverManager.firefoxdriver().cachePath("src/test/resources/drivers").setup();
+			driver = new FirefoxDriver();
+			break;
+		case "ie":
+			WebDriverManager.iedriver().cachePath("src/test/resources/drivers").setup();
+			driver = new InternetExplorerDriver();
+			break;
+		default:
+			throw new IllegalStateException("Invalid browser name: ");
+		}
+		driver.manage().window().maximize();
+		driver.get(new DataLoader().getUrl());
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+	}
 	
+	/*
 	@BeforeMethod
 	public void openBrowser()
 	{
@@ -36,12 +73,14 @@ public class LoginScenariosTC {
 				driver.get(Url);
 		
 	}
-	
+	*/
 	@Test(enabled = true)
 	public void validCredentials() {
 		
-		new loginPage(driver).setUserName("standard_user");
-		new loginPage(driver).setPassword("secret_sauce");
+		//new loginPage(driver).setUserName("standard_user");
+		//new loginPage(driver).setPassword("secret_sauce");
+		new loginPage(driver).setUserName(new DataLoader().getUsername());
+		new loginPage(driver).setPassword(new DataLoader().getPassword());
 		new loginPage(driver).clickLogin();
 		
 	}
@@ -49,8 +88,10 @@ public class LoginScenariosTC {
 	@Test(enabled = true , groups = "invalidLogins")
 	public void invalidCredentials() {
 		
-		new loginPage(driver).setUserName("standard_users");
-		new loginPage(driver).setPassword("secret_saucelab");
+		//new loginPage(driver).setUserName("standard_users");
+		//new loginPage(driver).setPassword("secret_saucelab");
+		new loginPage(driver).setUserName(new DataLoader().getUsername());
+		new loginPage(driver).setPassword(new DataLoader().getPassword());
 		new loginPage(driver).clickLogin();
 		String actualMsg = new loginPage(driver).getErrMsg();
 		Assert.assertEquals(actualMsg, "Epic sadface: Username and password do not match any user in this service");	

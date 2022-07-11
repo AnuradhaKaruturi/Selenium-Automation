@@ -10,7 +10,6 @@ public class DataLoader {
 
 	private Properties properties;
 	private final String propertyFilePath= "C:\\Users\\anura\\git\\POM\\POM\\src\\main\\java\\data.property";
-
 	public DataLoader(){
 		BufferedReader reader;
 		try {

@@ -1,7 +1,7 @@
 username=standard_user
 password=secret_sauce
-browserName=edge
-url=https://cadidatex:qa-is-cool@qa-task.backbasecloud.com
+browserName=chrome
+url=https:www.saucedemo.com
 address=time square, street, NY city
 zipcode=343243
 email=user@outlook.com

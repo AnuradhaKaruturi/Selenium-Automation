@@ -2,20 +2,20 @@
 <testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-11T10:58:32 GMT-06:00" name="Default suite" finished-at="2022-07-11T10:58:36 GMT-06:00" duration-ms="4836">
+  <suite started-at="2022-07-11T15:57:30 GMT-06:00" name="Default suite" finished-at="2022-07-11T15:57:35 GMT-06:00" duration-ms="4730">
     <groups>
     </groups>
-    <test started-at="2022-07-11T10:58:32 GMT-06:00" name="Default test" finished-at="2022-07-11T10:58:36 GMT-06:00" duration-ms="4836">
+    <test started-at="2022-07-11T15:57:30 GMT-06:00" name="Default test" finished-at="2022-07-11T15:57:35 GMT-06:00" duration-ms="4730">
       <class name="TestCases.LoginScenariosTC">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:TestCases.LoginScenariosTC@6404f418]" started-at="2022-07-11T10:58:32 GMT-06:00" name="openBrowser" finished-at="2022-07-11T10:58:36 GMT-06:00" duration-ms="4216" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T15:57:30 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T15:57:34 GMT-06:00" duration-ms="4115" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method signature="validCredentials()[pri:0, instance:TestCases.LoginScenariosTC@6404f418]" started-at="2022-07-11T10:58:36 GMT-06:00" name="validCredentials" finished-at="2022-07-11T10:58:36 GMT-06:00" duration-ms="402" status="PASS">
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="validCredentials()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T15:57:34 GMT-06:00" name="validCredentials" finished-at="2022-07-11T15:57:35 GMT-06:00" duration-ms="419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@6404f418]" started-at="2022-07-11T10:58:36 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T10:58:36 GMT-06:00" duration-ms="178" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T15:57:35 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T15:57:35 GMT-06:00" duration-ms="149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

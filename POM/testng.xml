@@ -8,9 +8,10 @@
   </run>
   </groups> 
     <classes>
-      <class name="TestCases.TC1"/>
-     <!-- --> <class name="TestCases.TC2"/> 
-      <class name="TestCases.LoginScenarios"/>
+      <class name="TestCases.FileUploadTC"/>
+      <class name="TestCases.ValidateThankYouTC"/> 
+      <class name="TestCases.LoginScenariosTC"/>
+       <class name="TestCases.SelectBackPackTC"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

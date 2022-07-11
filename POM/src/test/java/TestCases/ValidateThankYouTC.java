@@ -50,10 +50,21 @@ public class ValidateThankYouTC {
 		new loginPage(driver).clickLogin();
 		
 	}
-
+	@Test
+	public void chooseaProduct() {
+		
+		validCredentials();
+		new ProductsPage(driver).selectBackPack();
+		new ProductDetailsPage(driver).clickAddToCart();
+		new ProductsPage(driver).clickShoppingCart();
+		new CartPage(driver).clickCheckout();
+		new AddressPage(driver).enterAddressDetails("Anu", "Jain", "T6r 0m3");
+		new CheckOutPage(driver).clickFinish();
+		
+	} 
 	@Test
 	public void validateThankYouMsg() {
-	new SelectBackPackTC().chooseaProduct();
+	chooseaProduct();
 	String actualMsg = new CompletePage(driver).ValidateThankyouMsg();
 	Assert.assertEquals(actualMsg, "THANK YOU FOR YOUR ORDER");
 	}

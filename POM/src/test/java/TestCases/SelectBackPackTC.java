@@ -76,12 +76,6 @@ public class SelectBackPackTC {
 		
 	}
 	
-	@Test
-	public void validateThankYouMsg() {
-	chooseaProduct();
-	String actualMsg = new CompletePage(driver).ValidateThankyouMsg();
-	Assert.assertEquals(actualMsg, "THANK YOU FOR YOUR ORDER");
-	}
 	
 	@AfterMethod
 	public void closeBrowser()
