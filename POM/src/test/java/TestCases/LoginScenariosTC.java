@@ -22,10 +22,10 @@ public class LoginScenariosTC {
 
 	public WebDriver driver;
 	
-	//@Parameters({"browserName"})
+	@Parameters({"browserName"})
 	@BeforeMethod
-	public void OpenBrowser() {
-		String browserName = new DataLoader().getBrowserName();
+	public void OpenBrowser(String browserName) {
+
 		switch(browserName){
 		case "chrome":
 			WebDriverManager.chromedriver().cachePath("src/test/resources/drivers").setup(); 

@@ -1,25 +1,447 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="12" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-11T15:57:30 GMT-06:00" name="Default suite" finished-at="2022-07-11T15:57:35 GMT-06:00" duration-ms="4730">
+  <suite started-at="2022-07-11T16:24:03 GMT-06:00" name="Suite" finished-at="2022-07-11T16:26:43 GMT-06:00" duration-ms="159975">
     <groups>
+      <group name="invalidLogins">
+        <method signature="LoginScenariosTC.emptyPassword()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" name="emptyPassword" class="TestCases.LoginScenariosTC"/>
+        <method signature="LoginScenariosTC.emptyUserName()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" name="emptyUserName" class="TestCases.LoginScenariosTC"/>
+        <method signature="LoginScenariosTC.invalidCredentials()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" name="invalidCredentials" class="TestCases.LoginScenariosTC"/>
+        <method signature="LoginScenariosTC.invalidPassword()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" name="invalidPassword" class="TestCases.LoginScenariosTC"/>
+        <method signature="LoginScenariosTC.invalidUserName()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" name="invalidUserName" class="TestCases.LoginScenariosTC"/>
+        <method signature="LoginScenariosTC.emptyPassword()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" name="emptyPassword" class="TestCases.LoginScenariosTC"/>
+        <method signature="LoginScenariosTC.emptyUserName()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" name="emptyUserName" class="TestCases.LoginScenariosTC"/>
+        <method signature="LoginScenariosTC.invalidCredentials()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" name="invalidCredentials" class="TestCases.LoginScenariosTC"/>
+        <method signature="LoginScenariosTC.invalidPassword()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" name="invalidPassword" class="TestCases.LoginScenariosTC"/>
+        <method signature="LoginScenariosTC.invalidUserName()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" name="invalidUserName" class="TestCases.LoginScenariosTC"/>
+      </group> <!-- invalidLogins -->
     </groups>
-    <test started-at="2022-07-11T15:57:30 GMT-06:00" name="Default test" finished-at="2022-07-11T15:57:35 GMT-06:00" duration-ms="4730">
+    <test started-at="2022-07-11T16:24:03 GMT-06:00" name="Test" finished-at="2022-07-11T16:25:15 GMT-06:00" duration-ms="71357">
       <class name="TestCases.LoginScenariosTC">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T15:57:30 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T15:57:34 GMT-06:00" duration-ms="4115" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:03 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:24:08 GMT-06:00" duration-ms="4623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method signature="validCredentials()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T15:57:34 GMT-06:00" name="validCredentials" finished-at="2022-07-11T15:57:35 GMT-06:00" duration-ms="419" status="PASS">
+        <test-method signature="emptyCredentials()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:08 GMT-06:00" name="emptyCredentials" finished-at="2022-07-11T16:24:08 GMT-06:00" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:08 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:24:09 GMT-06:00" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:09 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:24:11 GMT-06:00" duration-ms="2830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="emptyPassword()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:11 GMT-06:00" name="emptyPassword" finished-at="2022-07-11T16:24:12 GMT-06:00" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:12 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:24:12 GMT-06:00" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:12 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:24:15 GMT-06:00" duration-ms="2590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="emptyUserName()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:15 GMT-06:00" name="emptyUserName" finished-at="2022-07-11T16:24:15 GMT-06:00" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUserName -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:15 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:24:15 GMT-06:00" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:15 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:24:18 GMT-06:00" duration-ms="2750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="invalidCredentials()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:24:18 GMT-06:00" name="invalidCredentials" finished-at="2022-07-11T16:25:04 GMT-06:00" duration-ms="46117" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h3[@data-test='error']' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h3[@data-test='error']' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at Pages.BasePage.waitForElementVisibility(BasePage.java:105)
+at Pages.BasePage.getText(BasePage.java:115)
+at Pages.loginPage.getErrMsg(loginPage.java:59)
+at TestCases.LoginScenariosTC.invalidCredentials(LoginScenariosTC.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h3[@data-test='error']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'ANU', ip: '10.0.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae5a1c0199c72e71de3c023a962bb6f4, findElement {using=xpath, value=//h3[@data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\anura\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60353}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60353/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ae5a1c0199c72e71de3c023a962bb6f4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:04 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:25:04 GMT-06:00" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:04 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:25:07 GMT-06:00" duration-ms="2706" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="invalidPassword()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:07 GMT-06:00" name="invalidPassword" finished-at="2022-07-11T16:25:08 GMT-06:00" duration-ms="522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:08 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:25:08 GMT-06:00" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:08 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:25:10 GMT-06:00" duration-ms="2660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="invalidUserName()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:10 GMT-06:00" name="invalidUserName" finished-at="2022-07-11T16:25:11 GMT-06:00" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUserName -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:11 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:25:11 GMT-06:00" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:11 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:25:14 GMT-06:00" duration-ms="2614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="validCredentials()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:14 GMT-06:00" name="validCredentials" finished-at="2022-07-11T16:25:14 GMT-06:00" duration-ms="586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T15:57:35 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T15:57:35 GMT-06:00" duration-ms="149" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@4803b726]" started-at="2022-07-11T16:25:14 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:25:15 GMT-06:00" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- TestCases.LoginScenariosTC -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+    <test started-at="2022-07-11T16:25:15 GMT-06:00" name="edge" finished-at="2022-07-11T16:26:43 GMT-06:00" duration-ms="88524">
+      <class name="TestCases.LoginScenariosTC">
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:15 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:25:28 GMT-06:00" duration-ms="12931" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="emptyCredentials()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:28 GMT-06:00" name="emptyCredentials" finished-at="2022-07-11T16:25:28 GMT-06:00" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:28 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:25:28 GMT-06:00" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:28 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:25:32 GMT-06:00" duration-ms="4182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="emptyPassword()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:32 GMT-06:00" name="emptyPassword" finished-at="2022-07-11T16:25:33 GMT-06:00" duration-ms="467" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:33 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:25:33 GMT-06:00" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:33 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:25:37 GMT-06:00" duration-ms="4086" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="emptyUserName()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:37 GMT-06:00" name="emptyUserName" finished-at="2022-07-11T16:25:38 GMT-06:00" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyUserName -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:38 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:25:38 GMT-06:00" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:38 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:25:42 GMT-06:00" duration-ms="4070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="invalidCredentials()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:25:42 GMT-06:00" name="invalidCredentials" finished-at="2022-07-11T16:26:28 GMT-06:00" duration-ms="46086" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h3[@data-test='error']' (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //h3[@data-test='error']' (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at Pages.BasePage.waitForElementVisibility(BasePage.java:105)
+at Pages.BasePage.getText(BasePage.java:115)
+at Pages.loginPage.getErrMsg(loginPage.java:59)
+at TestCases.LoginScenariosTC.invalidCredentials(LoginScenariosTC.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h3[@data-test='error']"}
+  (Session info: MicrosoftEdge=103.0.1264.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'ANU', ip: '10.0.0.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [53911478bfbcbdefb4d861ab42047e9d, findElement {using=xpath, value=//h3[@data-test='error']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 103.0.1264.49, ms:edgeOptions: {debuggerAddress: localhost:60612}, msedge: {msedgedriverVersion: 103.0.1264.49 (abaa9303c229..., userDataDir: C:\Users\anura\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60612/devtoo..., se:cdpVersion: 103.0.1264.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 53911478bfbcbdefb4d861ab42047e9d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:28 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:26:28 GMT-06:00" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:28 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:26:32 GMT-06:00" duration-ms="4138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="invalidPassword()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:32 GMT-06:00" name="invalidPassword" finished-at="2022-07-11T16:26:33 GMT-06:00" duration-ms="550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:33 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:26:33 GMT-06:00" duration-ms="155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:33 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:26:37 GMT-06:00" duration-ms="4355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="invalidUserName()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:37 GMT-06:00" name="invalidUserName" finished-at="2022-07-11T16:26:38 GMT-06:00" duration-ms="555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUserName -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:38 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:26:38 GMT-06:00" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="OpenBrowser(java.lang.String)[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:38 GMT-06:00" name="OpenBrowser" finished-at="2022-07-11T16:26:42 GMT-06:00" duration-ms="4446" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenBrowser -->
+        <test-method signature="validCredentials()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:42 GMT-06:00" name="validCredentials" finished-at="2022-07-11T16:26:43 GMT-06:00" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestCases.LoginScenariosTC@6d4d66d2]" started-at="2022-07-11T16:26:43 GMT-06:00" name="closeBrowser" finished-at="2022-07-11T16:26:43 GMT-06:00" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestCases.LoginScenariosTC -->
+    </test> <!-- edge -->
+  </suite> <!-- Suite -->
 </testng-results>
