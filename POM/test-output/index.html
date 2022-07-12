@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.LoginScenariosTC" class="method navigator-link" hash-for-method="invalidCredentials">invalidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.LoginScenariosTC" class="method navigator-link" hash-for-method="invalidCredentials">invalidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">14 methods,   14 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -149,6 +130,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.LoginScenariosTC" class="method navigator-link" hash-for-method="emptyUserName">emptyUserName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.LoginScenariosTC" class="method navigator-link" hash-for-method="invalidCredentials">invalidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.LoginScenariosTC" class="method navigator-link" hash-for-method="invalidCredentials">invalidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -193,106 +184,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">TestCases.LoginScenariosTC</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidCredentials">
-                  </a> <!-- invalidCredentials -->
-                  <span class="method-name">invalidCredentials</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h3[@data-test=&apos;error&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at Pages.BasePage.waitForElementVisibility(BasePage.java:105)
-	at Pages.BasePage.getText(BasePage.java:115)
-	at Pages.loginPage.getErrMsg(loginPage.java:59)
-	at TestCases.LoginScenariosTC.invalidCredentials(LoginScenariosTC.java:96)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[@data-test=&apos;error&apos;]&quot;}
-  (Session info: chrome=103.0.5060.114)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
-System info: host: &apos;ANU&apos;, ip: &apos;10.0.0.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ae5a1c0199c72e71de3c023a962bb6f4, findElement {using=xpath, value=//h3[@data-test=&apos;error&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\anura\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60353}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60353/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ae5a1c0199c72e71de3c023a962bb6f4
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 32 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="invalidCredentials">
-                  </a> <!-- invalidCredentials -->
-                  <span class="method-name">invalidCredentials</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h3[@data-test=&apos;error&apos;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at Pages.BasePage.waitForElementVisibility(BasePage.java:105)
-	at Pages.BasePage.getText(BasePage.java:115)
-	at Pages.loginPage.getErrMsg(loginPage.java:59)
-	at TestCases.LoginScenariosTC.invalidCredentials(LoginScenariosTC.java:96)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[@data-test=&apos;error&apos;]&quot;}
-  (Session info: MicrosoftEdge=103.0.1264.49)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
-System info: host: &apos;ANU&apos;, ip: &apos;10.0.0.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.13&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [53911478bfbcbdefb4d861ab42047e9d, findElement {using=xpath, value=//h3[@data-test=&apos;error&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 103.0.1264.49, ms:edgeOptions: {debuggerAddress: localhost:60612}, msedge: {msedgedriverVersion: 103.0.1264.49 (abaa9303c229..., userDataDir: C:\Users\anura\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60612/devtoo..., se:cdpVersion: 103.0.1264.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 53911478bfbcbdefb4d861ab42047e9d
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy17.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 32 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -339,6 +230,20 @@ Session ID: 53911478bfbcbdefb4d861ab42047e9d
                   <a name="emptyUserName">
                   </a> <!-- emptyUserName -->
                   <span class="method-name">emptyUserName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentials">
+                  </a> <!-- invalidCredentials -->
+                  <span class="method-name">invalidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCredentials">
+                  </a> <!-- invalidCredentials -->
+                  <span class="method-name">invalidCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -473,66 +378,66 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'invalidCredentials')
+data.setCell(0, 1, 'validCredentials')
 data.setCell(0, 2, 'TestCases.LoginScenariosTC')
-data.setCell(0, 3, 46117);
+data.setCell(0, 3, 445);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'invalidCredentials')
+data.setCell(1, 1, 'invalidUserName')
 data.setCell(1, 2, 'TestCases.LoginScenariosTC')
-data.setCell(1, 3, 46086);
+data.setCell(1, 3, 436);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validCredentials')
+data.setCell(2, 1, 'invalidPassword')
 data.setCell(2, 2, 'TestCases.LoginScenariosTC')
-data.setCell(2, 3, 586);
+data.setCell(2, 3, 426);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validCredentials')
+data.setCell(3, 1, 'emptyUserName')
 data.setCell(3, 2, 'TestCases.LoginScenariosTC')
-data.setCell(3, 3, 580);
+data.setCell(3, 3, 418);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'invalidUserName')
+data.setCell(4, 1, 'emptyCredentials')
 data.setCell(4, 2, 'TestCases.LoginScenariosTC')
-data.setCell(4, 3, 558);
+data.setCell(4, 3, 406);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'invalidUserName')
+data.setCell(5, 1, 'invalidCredentials')
 data.setCell(5, 2, 'TestCases.LoginScenariosTC')
-data.setCell(5, 3, 555);
+data.setCell(5, 3, 405);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'invalidPassword')
+data.setCell(6, 1, 'invalidUserName')
 data.setCell(6, 2, 'TestCases.LoginScenariosTC')
-data.setCell(6, 3, 550);
+data.setCell(6, 3, 405);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'invalidPassword')
+data.setCell(7, 1, 'emptyPassword')
 data.setCell(7, 2, 'TestCases.LoginScenariosTC')
-data.setCell(7, 3, 522);
+data.setCell(7, 3, 398);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'emptyUserName')
+data.setCell(8, 1, 'validCredentials')
 data.setCell(8, 2, 'TestCases.LoginScenariosTC')
-data.setCell(8, 3, 516);
+data.setCell(8, 3, 397);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'emptyCredentials')
+data.setCell(9, 1, 'emptyPassword')
 data.setCell(9, 2, 'TestCases.LoginScenariosTC')
-data.setCell(9, 3, 516);
+data.setCell(9, 3, 389);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'emptyPassword')
+data.setCell(10, 1, 'invalidCredentials')
 data.setCell(10, 2, 'TestCases.LoginScenariosTC')
-data.setCell(10, 3, 472);
+data.setCell(10, 3, 388);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'emptyCredentials')
+data.setCell(11, 1, 'invalidPassword')
 data.setCell(11, 2, 'TestCases.LoginScenariosTC')
-data.setCell(11, 3, 468);
+data.setCell(11, 3, 383);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'emptyPassword')
+data.setCell(12, 1, 'emptyUserName')
 data.setCell(12, 2, 'TestCases.LoginScenariosTC')
-data.setCell(12, 3, 467);
+data.setCell(12, 3, 376);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'emptyUserName')
+data.setCell(13, 1, 'emptyCredentials')
 data.setCell(13, 2, 'TestCases.LoginScenariosTC')
-data.setCell(13, 3, 451);
+data.setCell(13, 3, 375);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -565,171 +470,167 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyCredentials</span>
-                <span class="method-start">4624 ms</span>
+                <span class="method-start">4650 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">5144 ms</span>
+                <span class="method-start">5059 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(chrome)</span>
-                <span class="method-start">5291 ms</span>
+                <span class="method-start">5178 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyPassword</span>
-                <span class="method-start">8121 ms</span>
+                <span class="method-start">7462 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">8594 ms</span>
+                <span class="method-start">7862 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(chrome)</span>
-                <span class="method-start">8767 ms</span>
+                <span class="method-start">7946 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyUserName</span>
-                <span class="method-start">11357 ms</span>
+                <span class="method-start">10252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">11874 ms</span>
+                <span class="method-start">10629 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(chrome)</span>
-                <span class="method-start">12021 ms</span>
+                <span class="method-start">10722 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">invalidCredentials</span>
-                <span class="method-start">14771 ms</span>
+                <span class="method-start">13027 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">60899 ms</span>
+                <span class="method-start">13416 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(chrome)</span>
-                <span class="method-start">61047 ms</span>
+                <span class="method-start">13510 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidPassword</span>
-                <span class="method-start">63754 ms</span>
+                <span class="method-start">15865 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">64279 ms</span>
+                <span class="method-start">16249 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(chrome)</span>
-                <span class="method-start">64433 ms</span>
+                <span class="method-start">16357 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidUserName</span>
-                <span class="method-start">67094 ms</span>
+                <span class="method-start">18645 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">67654 ms</span>
+                <span class="method-start">19083 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(chrome)</span>
-                <span class="method-start">67868 ms</span>
+                <span class="method-start">19182 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validCredentials</span>
-                <span class="method-start">70485 ms</span>
+                <span class="method-start">21448 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">71073 ms</span>
+                <span class="method-start">21846 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(edge)</span>
-                <span class="method-start">71407 ms</span>
+                <span class="method-start">22010 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyCredentials</span>
-                <span class="method-start">84338 ms</span>
+                <span class="method-start">26067 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">84808 ms</span>
+                <span class="method-start">26444 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(edge)</span>
-                <span class="method-start">84945 ms</span>
+                <span class="method-start">26588 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyPassword</span>
-                <span class="method-start">89128 ms</span>
+                <span class="method-start">30567 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">89596 ms</span>
+                <span class="method-start">30957 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(edge)</span>
-                <span class="method-start">89756 ms</span>
+                <span class="method-start">31101 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">emptyUserName</span>
-                <span class="method-start">93842 ms</span>
+                <span class="method-start">35091 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">94294 ms</span>
+                <span class="method-start">35510 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(edge)</span>
-                <span class="method-start">94455 ms</span>
+                <span class="method-start">35630 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">invalidCredentials</span>
-                <span class="method-start">98525 ms</span>
+                <span class="method-start">39630 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">144623 ms</span>
+                <span class="method-start">40036 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(edge)</span>
-                <span class="method-start">144796 ms</span>
+                <span class="method-start">40126 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidPassword</span>
-                <span class="method-start">148934 ms</span>
+                <span class="method-start">44213 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">149485 ms</span>
+                <span class="method-start">44640 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(edge)</span>
-                <span class="method-start">149641 ms</span>
+                <span class="method-start">44768 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidUserName</span>
-                <span class="method-start">153996 ms</span>
+                <span class="method-start">48747 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">154561 ms</span>
+                <span class="method-start">49153 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">OpenBrowser(edge)</span>
-                <span class="method-start">154706 ms</span>
+                <span class="method-start">49347 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validCredentials</span>
-                <span class="method-start">159153 ms</span>
+                <span class="method-start">53319 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">159735 ms</span>
+                <span class="method-start">53765 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -40,18 +40,21 @@ public class loginPage extends BasePage {
 	*/
 	public loginPage setUserName(String username) {
 		enterText(userName, username);
+		Utilities.Log.info("Entered UserName");
 		return this;
 	}
 	
 	public loginPage setPassword(String pswd) {
 		new BasePage(driver).waitForElementVisibility(password);
 		password.sendKeys(pswd);
+		Utilities.Log.info("Entered password");
 		return this;
 	}
 	
 	public ProductsPage clickLogin() {
 		new BasePage(driver).waitForElementVisibility(loginBtn);
 		loginBtn.click();
+		Utilities.Log.info("Login Button Clicked");
 		return new ProductsPage(driver);
 	}
 	
@@ -61,6 +64,7 @@ public class loginPage extends BasePage {
 	
 	public void uploadFile() {
 		enterText(upload,"C:\\Users\\anura\\Downloads"); //passed
+		Utilities.Log.info("File Uploaded");
 		//enterText(upload,"\"C:\\Users\\anura\\Downloads\\most-complete-webdriver-java-cheatsheet.pdf\""); //failed
 		
 	}

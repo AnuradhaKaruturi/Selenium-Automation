@@ -88,10 +88,8 @@ public class LoginScenariosTC {
 	@Test(enabled = true , groups = "invalidLogins")
 	public void invalidCredentials() {
 		
-		//new loginPage(driver).setUserName("standard_users");
-		//new loginPage(driver).setPassword("secret_saucelab");
-		new loginPage(driver).setUserName(new DataLoader().getUsername());
-		new loginPage(driver).setPassword(new DataLoader().getPassword());
+		new loginPage(driver).setUserName("standard_users");
+		new loginPage(driver).setPassword("secret_saucelab");
 		new loginPage(driver).clickLogin();
 		String actualMsg = new loginPage(driver).getErrMsg();
 		Assert.assertEquals(actualMsg, "Epic sadface: Username and password do not match any user in this service");	
